@@ -87,7 +87,7 @@ Para rodar este projeto no seu ambiente, você precisará ter Node.js, Python, D
 
 **1. Clone o repositório:**
 ```bash
-git clone [https://github.com/augolv/codexocr.git](https://github.com/augolv/codexocr.git)
+git clone [https://github.com/augolv/codexOCR.git](https://github.com/augolv/codexOCR.git)
 cd codexocr
 ```
 
