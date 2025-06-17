@@ -1,0 +1,33 @@
+{
+  "name": "codexocr",
+  "version": "1.0.0",
+  "description": "*Decifrando cada página, entregando cada palavra.*",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "install:all": "npm install",
+    "dev": "concurrently \"npm:dev:api\" \"npm:dev:frontend\"",
+    "dev:api": "npm run dev --workspace=api",
+    "dev:frontend": "npm run dev --workspace=frontend",
+    "test": "npm test --workspaces",
+    "test:api": "npm test --workspace=api",
+    "test:frontend": "npm test --workspace=frontend",
+    "lint": "npm run lint --workspaces --if-present",
+    "lint:fix": "npm run lint:fix --workspaces --if-present"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/augolv/codexOCR.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/augolv/codexOCR/issues"
+  },
+  "homepage": "https://github.com/augolv/codexOCR#readme",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
