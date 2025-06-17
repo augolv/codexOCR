@@ -1,0 +1,12 @@
+node_modules/
+venv/
+env/
+.venv/
+.env
+.env.local
+dist/
+build/
+__pycache__/
+*.pyc
+npm-debug.log*
+coverage/
