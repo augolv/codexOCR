@@ -10,3 +10,4 @@ __pycache__/
 *.pyc
 npm-debug.log*
 coverage/
+/dynamodb_data
