@@ -11,3 +11,4 @@ __pycache__/
 npm-debug.log*
 coverage/
 /dynamodb_data
+/dynamodb-data
