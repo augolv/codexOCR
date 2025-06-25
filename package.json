@@ -28,6 +28,8 @@
   },
   "homepage": "https://github.com/augolv/codexOCR#readme",
   "devDependencies": {
-    "concurrently": "^9.1.2"
+    "concurrently": "^9.1.2",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
   }
 }
