@@ -4,13 +4,11 @@
   "description": "*Decifrando cada página, entregando cada palavra.*",
   "private": true,
   "workspaces": [
-    "packages/api",
-    "packages/frontend",
-    "packages/worker"
+    "packages/*"
   ],
   "scripts": {
     "install:all": "npm install",
-    "dev": "concurrently \"npm:dev:api\" \"npm:dev:frontend\"",
+    "dev": "npx concurrently \"npm:dev:api\" \"npm:dev:frontend\"",
     "dev:api": "npm run dev --workspace=api",
     "dev:frontend": "npm run dev --workspace=frontend",
     "test": "npm test --workspaces",
@@ -32,7 +30,11 @@
   "devDependencies": {
     "@types/express": "^5.0.3",
     "@types/node": "^24.0.4",
+    "@typescript-eslint/eslint-plugin": "^8.35.0",
+    "@typescript-eslint/parser": "^8.35.0",
     "concurrently": "^9.1.2",
+    "eslint": "^9.30.0",
+    "eslint-plugin-react": "^7.37.5",
     "tsx": "^4.20.3",
     "typescript": "^5.8.3"
   }
