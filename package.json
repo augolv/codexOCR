@@ -4,7 +4,9 @@
   "description": "*Decifrando cada página, entregando cada palavra.*",
   "private": true,
   "workspaces": [
-    "packages/*"
+    "packages/api",
+    "packages/frontend",
+    "packages/worker"
   ],
   "scripts": {
     "install:all": "npm install",
