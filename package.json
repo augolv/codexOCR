@@ -14,7 +14,7 @@
     "test": "npm test --workspaces",
     "test:api": "npm test --workspace=api",
     "test:frontend": "npm test --workspace=frontend",
-    "lint": "npm run lint --workspaces --if-present",
+    "lint": "eslint . && packages\\worker\\venv\\Scripts\\python.exe -m flake8 packages/worker/src",
     "lint:fix": "npm run lint:fix --workspaces --if-present"
   },
   "repository": {
@@ -39,6 +39,7 @@
     "eslint-plugin-react": "^7.37.5",
     "prettier": "^3.6.2",
     "tsx": "^4.20.3",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.35.1"
   }
 }
